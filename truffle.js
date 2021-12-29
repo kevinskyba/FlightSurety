@@ -1,14 +1,13 @@
-var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat";
+var HDWalletProvider = require("@truffle/hdwallet-provider");
+var mnemonic = "badge slab holiday flip oven hire easily enough fatigue vague city manage";
 
 module.exports = {
   networks: {
     development: {
-      provider: function() {
-        return new HDWalletProvider(mnemonic, "http://127.0.0.1:8545/", 0, 50);
-      },
+      host: "127.0.0.1",     // Localhost
+      port: 7545,            // Standard Ganache UI port
       network_id: '*',
-      gas: 9999999
+      gas: 4500000
     }
   },
   compilers: {

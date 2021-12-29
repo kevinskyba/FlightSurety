@@ -24,7 +24,32 @@
         <div id="display-wrapper" class="top-20">
         </div>
         <div class="row top-20">
-            <label class="form">Flight</label> <input type="text" id="flight-number"> <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+            Flight:
+            <select name="flights" id="flight-number">
+                <option value="lh123">lh123</option>
+                <option value="ph435">ph435</option>
+                <option value="IH3943">IH3943</option>
+                <option value="TLL392">TLL392</option>
+                <option value="JG343">JG343</option>
+            </select>
+        </div>
+        <p></p>
+        <h3>Actions:</h3>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="submit-oracle">Get Flight Status</btn>
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="submit-buy">Buy insurance</btn><label class="form left-20">Price (ETH):</label><input type="number" id="price">
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="submit-balance">Get Balance</btn>
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="submit-withdraw">Withdraw</btn>
+        </div>
+        <hr>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="submit-fund">Fund 1 Eth</btn>
         </div>
     </main>
 
